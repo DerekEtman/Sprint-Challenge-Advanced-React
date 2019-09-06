@@ -1,14 +1,32 @@
 import React from 'react';
 import PlayerCard from './PlayerCard';
+import { useDarkMode } from '../hooks/useDarkMode';
 
 export const Display = (props) => {
-    console.log(props);
-
-
+    const [ darkMode, setDarkMode ] = useDarkMode(false);
+    
+    const toggleMode = e => {
+        e.preventDefault();
+        setDarkMode(!darkMode);
+    };
+    
+    
+    // console.log(props);
+    
     return(
-        <div className="playerGrid">
+     <div className="playerGrid">
+        <h1 className="displayTitle">¡FootBall!</h1>
+         <div className="dark-mode__toggle"> 
+
+          <div 
+            onClick={toggleMode}
+            className={darkMode? 'toggle toggled' : 'toggle'} 
+           />
+
+         </div>
+
         <h2>{props.data.map(player => <PlayerCard data={player} />)}</h2>
-        </div>
+     </div>
     );
 
 }
