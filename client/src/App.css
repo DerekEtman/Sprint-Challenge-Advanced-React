@@ -1,33 +1,84 @@
+/*#282c34 */
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
+.appWrapper {
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.displayTitle{
+  text-align: center;
+  border-bottom: 4px solid black;
+  border-radius: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.playerGrid{
+  width: 90%;
+}
+
+/* .playerGrid-test{
+  display: grid;
+  grid-template-columns: 200px 50px 100px;
+  grid-template-rows: 50px 50px;
+} */
+
+.cardWrapper{
+  border: 1px solid black;
+  width: 90%;
+  padding: 0 2rem;
+  margin: 2rem auto;
+}
+
+.playerCard{
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+}
+
+.playerDetails{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.dark-mode__toggle {
+  background: black;
+  border-radius: 50px;
+  border: 1px solid white;
+  height: 20px;
+  position: relative;
+  width: 40px;
+}
+
+.toggle {
+  background: white;
+  border:.5px solid gray;
+  border-radius: 50px;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 23px;
+}
+
+.toggled {
+  left: 18px;
+}
+
+.darkMode-mode {
+  color: #fff;
+  background-color: #313843;
+}
+
+.darkMode-mode .display {
+  background-color: #1F2022;
+  border: none;
 }
