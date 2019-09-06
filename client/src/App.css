@@ -16,7 +16,9 @@
 }
 
 .displayTitle{
-  text-align: right;
+  text-align: center;
+  border-bottom: 4px solid black;
+  border-radius: 6px;
 }
 
 .playerGrid{

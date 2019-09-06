@@ -15,7 +15,7 @@ export const Display = (props) => {
     
     return(
      <div className="playerGrid">
-        <h1 className="displayTitle">¡FootBall!</h1>
+        <h1 className="displayTitle">¡Women's WorldCup FootBall Players!</h1>
          <div className="dark-mode__toggle"> 
           <div 
             onClick={toggleMode}
