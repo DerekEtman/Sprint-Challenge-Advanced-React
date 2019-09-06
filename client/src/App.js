@@ -29,7 +29,7 @@ class App extends React.Component{
 
   render() {
     return (
-      <div>
+      <div className="appWrapper">
         <h1>Players.</h1>
         <Display data={this.state.data}/>
       </div>
