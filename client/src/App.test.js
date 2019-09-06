@@ -6,12 +6,10 @@ import Display from './components/Display';
 import PlayerCard from './components/PlayerCard'
 
 // This 
-test('should have Name Alex Morgan',  async ()=>{
-  const {findByText} = rtl.render(<App />)
-  findByText(/alex morgan/i)
+test('should have Name Alex Morgan & Country United States',  async ()=>{
+  const {findByText} = rtl.render(<App />);
+  findByText(/alex morgan/i);
+  findByText(/united states/i);
+  findByRole
 });
 
-test('should have Country of United States',  async ()=>{
-  const {findByText} = rtl.render(<App />)
-  findByText(/united states/i)
-})
