@@ -9,8 +9,10 @@ export default function PlayerCard (props) {
         <div className="cardWrapper">
             <div className="playerCard">
                 <h3>Name: {name}</h3>
-                <h4>Country: {country}</h4>
-                <p>No. of Searches: {searches}</p>
+                <div className="playerDetails">
+                    <h4>Country: {country}</h4>
+                    <p>No. of Searches: {searches}</p>
+                </div>
             </div>
         </div>
     )

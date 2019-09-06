@@ -15,9 +15,19 @@
   color: black;
 }
 
+.displayTitle{
+  text-align: right;
+}
+
 .playerGrid{
   width: 90%;
 }
+
+/* .playerGrid-test{
+  display: grid;
+  grid-template-columns: 200px 50px 100px;
+  grid-template-rows: 50px 50px;
+} */
 
 .cardWrapper{
   border: 1px solid black;
@@ -28,11 +38,17 @@
 
 .playerCard{
   display:grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+}
+
+.playerDetails{
+  display:grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .dark-mode__toggle {
-  background: green;
+  background: black;
   border-radius: 50px;
   border: 1px solid white;
   height: 20px;
@@ -41,7 +57,8 @@
 }
 
 .toggle {
-  background: #f68819;
+  background: white;
+  border:.5px solid gray;
   border-radius: 50px;
   height: 20px;
   left: 0;

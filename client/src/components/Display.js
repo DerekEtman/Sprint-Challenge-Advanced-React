@@ -17,15 +17,15 @@ export const Display = (props) => {
      <div className="playerGrid">
         <h1 className="displayTitle">¡FootBall!</h1>
          <div className="dark-mode__toggle"> 
-
           <div 
             onClick={toggleMode}
             className={darkMode? 'toggle toggled' : 'toggle'} 
-           />
-
+          />
          </div>
 
+        <div className="playerGrid-test">
         <h2>{props.data.map(player => <PlayerCard data={player} />)}</h2>
+        </div>
      </div>
     );
 

@@ -10,6 +10,5 @@ test('should have Name Alex Morgan & Country United States',  async ()=>{
   const {findByText} = rtl.render(<App />);
   findByText(/alex morgan/i);
   findByText(/united states/i);
-  findByRole
 });
 
